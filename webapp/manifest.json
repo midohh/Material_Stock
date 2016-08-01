@@ -13,6 +13,12 @@
 		"sourceTemplate": {
 			"id": "ui5template.basicSAPUI5ApplicationProject",
 			"version": "1.32.0"
+		},
+		"dataSources": {
+			"mainService": {
+				"uri": "./mockdata/products.json",
+				"type": "JSON"
+			}
 		}
 	},
 
@@ -41,7 +47,7 @@
 	"sap.ui5": {
 		"_version": "1.1.0",
 		"rootView": {
-			"viewName": "de.lhind.material.view.View1",
+			"viewName": "de.lhind.material.view.Page",
 			"type": "XML"
 		},
 		"dependencies": {
@@ -57,6 +63,9 @@
 			"cozy": true
 		},
 		"models": {
+			"": {
+				"dataSource": "mainService"
+			},
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
@@ -64,6 +73,7 @@
 				}
 			}
 		},
+		
 		"resources": {
 			"css": [{
 				"uri": "css/style.css"

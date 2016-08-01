@@ -1,0 +1,96 @@
+<mvc:View controllerName="de.lhind.material.controller.Page" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout" xmlns="sap.m">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<headerContent>
+					<Button icon="sap-icon://action" tooltip="Share"/>
+				</headerContent>
+				<subHeader>
+					<Toolbar>
+						<SearchField id="searchMaterial" placeholder="search Material" maxLength="18" enableSuggestions="true" search="onSearch" suggest="onSuggest"
+							suggestionItems="{ path: '/ProductCollection', sorter: { path: 'ProductId' } }">
+							<suggestionItems>
+								<SuggestionItem text="{path:'ProductId'}" description="{path:'Name'}"/>
+							</suggestionItems>
+						</SearchField>
+					</Toolbar>
+				</subHeader>
+				<content>
+					<!-- Object -->
+					<Panel id="objectPanel" class="sapUiResponsiveMargin" width="auto" headerText="{ProductId}" expandable="{device>/system/phone}" expanded="true">
+						<content>
+							<ObjectHeader title="{Name}"
+								number="{ parts:[{path:'Price'},{ path: 'CurrencyCode'}], type: 'sap.ui.model.type.Currency', formatOptions: {showMeasure: false} }"
+								numberUnit="{CurrencyCode}" responsive="true" icon="{ProductPicUrl}">
+								<attributes>
+									<ObjectAttribute title="Weight" text="{WeightMeasure} {WeightUnit}"/>
+									<ObjectAttribute title="Dimensions" text="{Width} x {Depth} X {Height} {DimUnit}"/>
+								</attributes>
+								<statuses>
+									<ObjectStatus text="In Stock" state="Success"/>
+								</statuses>
+								<headerContainer>
+									<IconTabBar id="itb1" selectedKey="key1" upperCase="true" class="sapUiResponsiveContentPadding">
+										<items>
+											<IconTabFilter text="Info" key="key1">
+												<content>
+													<Text text="{Description}"/>
+												</content>
+											</IconTabFilter>
+											<IconTabFilter text="Stock" count="7" key="key2">
+												<content>
+													<l:VerticalLayout class="sapUiContentPadding" width="100%">
+														<l:content>
+															<Table id="idProductsTable" inset="false" items="{ path: 'Stock', sorter: { path: 'Werk' } }">
+																<headerToolbar>
+																	<Toolbar>
+																		<Title text="Stock Overview" level="H2"/>
+																	</Toolbar>
+																</headerToolbar>
+																<columns>
+																	<Column width="12em">
+																		<Text text="Werk"/>
+																	</Column>
+																	<Column minScreenWidth="Tablet" demandPopin="true">
+																		<Text text="Lgort"/>
+																	</Column>
+																	<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Right">
+																		<Text text="Quantity"/>
+																	</Column>
+																</columns>
+																<items>
+																	<ColumnListItem>
+																		<cells>
+																			<ObjectNumber number="{Werk}"/>
+																			<ObjectNumber number="{Lgort}"/>
+																			<ObjectNumber number="{Menge}"/>
+																		</cells>
+																	</ColumnListItem>
+																</items>
+															</Table>
+														</l:content>
+													</l:VerticalLayout>
+												</content>
+											</IconTabFilter>
+										</items>
+									</IconTabBar>
+								</headerContainer>
+							</ObjectHeader>
+						</content>
+					</Panel>
+					<!--	<mvc:XMLView viewName ="de.lhind.material.view.Object"/> -->
+				</content>
+				<footer>
+					<Toolbar>
+						<ToolbarSpacer/>
+						<Button text="Accept" type="Accept"/>
+						<!--<Button text="Reject" type="Reject"/> -->
+						<!--<Button text="Edit"/> -->
+						<!--<Button text="Delete"/> -->
+					</Toolbar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
