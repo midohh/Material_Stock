@@ -8,7 +8,7 @@
 				</headerContent>
 				<subHeader>
 					<Toolbar>
-						<SearchField id="searchMaterial" placeholder="search Material" maxLength="18" enableSuggestions="true" search="onSearch" suggest="onSuggest"
+						<SearchField id="searchMaterial" placeholder="{i18n>searchMaterial}" maxLength="18" enableSuggestions="true" search="onSearch" suggest="onSuggest"
 							suggestionItems="{ path: '/ProductCollection', sorter: { path: 'ProductId' } }">
 							<suggestionItems>
 								<SuggestionItem text="{path:'ProductId'}" description="{path:'Name'}"/>
@@ -18,53 +18,59 @@
 				</subHeader>
 				<content>
 					<!-- Object -->
-					<Panel id="objectPanel" class="sapUiResponsiveMargin" width="auto" headerText="{ProductId}" expandable="{device>/system/phone}" expanded="true">
+					<Panel id="objectPanel"  width="auto" headerText="{ProductId}" expandable="{device>/system/phone}" expanded="true">
 						<content>
-							<ObjectHeader title="{Name}"
-								number="{ parts:[{path:'Price'},{ path: 'CurrencyCode'}], type: 'sap.ui.model.type.Currency', formatOptions: {showMeasure: false} }"
-								numberUnit="{CurrencyCode}" responsive="true" icon="{ProductPicUrl}">
+							<ObjectHeader	title="{Name}"
+											number="{ parts:[{path:'Price'},{ path: 'CurrencyCode'}], type: 'sap.ui.model.type.Currency', formatOptions: {showMeasure: false} }"
+											numberUnit="{CurrencyCode}" 
+											responsive="true" 
+											icon="{ProductPicUrl}">
 								<attributes>
-									<ObjectAttribute title="Weight" text="{WeightMeasure} {WeightUnit}"/>
-									<ObjectAttribute title="Dimensions" text="{Width} x {Depth} X {Height} {DimUnit}"/>
+									<ObjectAttribute title="{i18n>weight}" text="{WeightMeasure} {WeightUnit}"/>
+									<ObjectAttribute title="{i18n>dimensions}" text="{Width} x {Depth} X {Height} {DimUnit}"/>
 								</attributes>
 								<statuses>
 									<ObjectStatus text="In Stock" state="Success"/>
 								</statuses>
 								<headerContainer>
-									<IconTabBar id="itb1" selectedKey="key1" upperCase="true" class="sapUiResponsiveContentPadding">
+									<IconTabBar id="itb1" selectedKey="key2" upperCase="true" >
 										<items>
-											<IconTabFilter text="Info" key="key1">
+											<IconTabFilter text="{i18n>info}" key="key1">
 												<content>
 													<Text text="{Description}"/>
 												</content>
 											</IconTabFilter>
-											<IconTabFilter text="Stock" count="7" key="key2">
+											<IconTabFilter text="{i18n>stock}" key="key2">
 												<content>
-													<l:VerticalLayout class="sapUiContentPadding" width="100%">
+													<l:VerticalLayout width="100%">
 														<l:content>
 															<Table id="idProductsTable" inset="false" items="{ path: 'Stock', sorter: { path: 'Werk' } }">
 																<headerToolbar>
 																	<Toolbar>
-																		<Title text="Stock Overview" level="H2"/>
+																		<Title text="{i18n>stockOverview}" level="H2"/>
 																	</Toolbar>
 																</headerToolbar>
 																<columns>
-																	<Column width="12em">
-																		<Text text="Werk"/>
+																	<Column>
+																		<Text text="{i18n>plant}"/>
 																	</Column>
 																	<Column minScreenWidth="Tablet" demandPopin="true">
-																		<Text text="Lgort"/>
+																		<Text text="{i18n>storLoc}"/>
 																	</Column>
-																	<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Right">
-																		<Text text="Quantity"/>
+																	<Column minScreenWidth="Tablet" demandPopin="true">
+																		<Text text="{i18n>unrestricted}"/>
+																	</Column>
+																	<Column minScreenWidth="Tablet" demandPopin="true">
+																		<Text text="{i18n>specialStock}"/>
 																	</Column>
 																</columns>
 																<items>
 																	<ColumnListItem>
 																		<cells>
-																			<ObjectNumber number="{Werk}"/>
-																			<ObjectNumber number="{Lgort}"/>
-																			<ObjectNumber number="{Menge}"/>
+																			<ObjectNumber number="{Plant}"/>
+																			<ObjectNumber number="{StorLoc}"/>
+																			<ObjectNumber number="{Unrestricted}"/>
+																			<ObjectNumber number="{Special}"/>
 																		</cells>
 																	</ColumnListItem>
 																</items>

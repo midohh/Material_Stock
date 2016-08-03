@@ -18,18 +18,21 @@
 		"DimUnit": "cm",
 		"ProductPicUrl": "./img/DK120.jpg",
 		"Stock": [{
-			"Werk": "1000",
-			"Lgort": "0001",
-			"Menge": 100
+			"Plant": "1300",
+			"StorLoc": "All",
+			"Unrestricted":"36",
+			"Special":"10"
 		}, {
-			"Werk": "1000",
-			"Lgort": "0002",
-			"Menge": 2323
+			"Plant": "1300",
+			"StorLoc": "1301",
+			"Unrestricted":"20",
+			"Special":"5"
 		},
 		{
-			"Werk": "1000",
-			"Lgort": "0003",
-			"Menge": 100
+			"Plant": "1300",
+			"StorLoc": "1302",
+			"Unrestricted":"16",
+			"Special":"5"
 		}]
 	}, {
 		"ProductId": "1239102",
@@ -50,13 +53,21 @@
 		"DimUnit": "cm",
 		"ProductPicUrl": "https://openui5.hana.ondemand.com/test-resources/sap/ui/demokit/explored/img/HT-6100.jpg",
 		"Stock": [{
-			"Werk": "1000",
-			"Lgort": "0001",
-			"Menge": 1
+			"Plant": "1300",
+			"StorLoc": "All",
+			"Unrestricted":"15",
+			"Special":"10"
 		}, {
-			"Werk": "1000",
-			"Lgort": "0002",
-			"Menge": 1
+			"Plant": "1300",
+			"StorLoc": "1301",
+			"Unrestricted":"10",
+			"Special":"8"
+		},
+		{
+			"Plant": "1300",
+			"StorLoc": "1302",
+			"Unrestricted":"5",
+			"Special":"2"
 		}]
 	}, {
 		"ProductId": "2212-121-828",
@@ -77,13 +88,21 @@
 		"DimUnit": "cm",
 		"ProductPicUrl": "https://openui5.hana.ondemand.com/test-resources/sap/ui/demokit/explored/img/HT-1071.jpg",
 		"Stock": [{
-			"Werk": "1000",
-			"Lgort": "0001",
-			"Menge": 1
+			"Plant": "1300",
+			"StorLoc": "All",
+			"Unrestricted":"36",
+			"Special":"10"
 		}, {
-			"Werk": "1000",
-			"Lgort": "0002",
-			"Menge": 1
+			"Plant": "1300",
+			"StorLoc": "1301",
+			"Unrestricted":"20",
+			"Special":"5"
+		},
+		{
+			"Plant": "1300",
+			"StorLoc": "1302",
+			"Unrestricted":"16",
+			"Special":"5"
 		}]
 	}, {
 		"ProductId": "K47322.1",
@@ -104,13 +123,21 @@
 		"DimUnit": "cm",
 		"ProductPicUrl": "https://openui5.hana.ondemand.com/test-resources/sap/ui/demokit/explored/img/HT-1072.jpg",
 		"Stock": [{
-			"Werk": "1000",
-			"Lgort": "0001",
-			"Menge": 1
+			"Plant": "1300",
+			"StorLoc": "All",
+			"Unrestricted":"36",
+			"Special":"10"
 		}, {
-			"Werk": "1000",
-			"Lgort": "0002",
-			"Menge": 1
+			"Plant": "1300",
+			"StorLoc": "1301",
+			"Unrestricted":"20",
+			"Special":"5"
+		},
+		{
+			"Plant": "1300",
+			"StorLoc": "1302",
+			"Unrestricted":"16",
+			"Special":"5"
 		}]
 	}, {
 		"ProductId": "22134T",
@@ -131,13 +158,21 @@
 		"DimUnit": "cm",
 		"ProductPicUrl": "https://openui5.hana.ondemand.com/test-resources/sap/ui/demokit/explored/img/HT-1112.jpg",
 		"Stock": [{
-			"Werk": "1000",
-			"Lgort": "0001",
-			"Menge": 1
+			"Plant": "1300",
+			"StorLoc": "All",
+			"Unrestricted":"36",
+			"Special":"10"
 		}, {
-			"Werk": "1000",
-			"Lgort": "0002",
-			"Menge": 1
+			"Plant": "1300",
+			"StorLoc": "1301",
+			"Unrestricted":"20",
+			"Special":"5"
+		},
+		{
+			"Plant": "1300",
+			"StorLoc": "1302",
+			"Unrestricted":"16",
+			"Special":"5"
 		}]
 	}, {
 		"ProductId": "P1239823",
@@ -158,13 +193,21 @@
 		"DimUnit": "cm",
 		"ProductPicUrl": "https://openui5.hana.ondemand.com/test-resources/sap/ui/demokit/explored/img/HT-1111.jpg",
 		"Stock": [{
-			"Werk": "1000",
-			"Lgort": "0001",
-			"Menge": 1
+			"Plant": "1300",
+			"StorLoc": "All",
+			"Unrestricted":"36",
+			"Special":"10"
 		}, {
-			"Werk": "1000",
-			"Lgort": "0002",
-			"Menge": 1
+			"Plant": "1300",
+			"StorLoc": "1301",
+			"Unrestricted":"20",
+			"Special":"5"
+		},
+		{
+			"Plant": "1300",
+			"StorLoc": "1302",
+			"Unrestricted":"16",
+			"Special":"5"
 		}]
 	}, {
 		"ProductId": "214-121-828",
@@ -185,13 +228,21 @@
 		"DimUnit": "cm",
 		"ProductPicUrl": "https://openui5.hana.ondemand.com/test-resources/sap/ui/demokit/explored/img/HT-1114.jpg",
 		"Stock": [{
-			"Werk": "1000",
-			"Lgort": "0001",
-			"Menge": 1
+			"Plant": "1300",
+			"StorLoc": "All",
+			"Unrestricted":"36",
+			"Special":"10"
 		}, {
-			"Werk": "1000",
-			"Lgort": "0002",
-			"Menge": 1
+			"Plant": "1300",
+			"StorLoc": "1301",
+			"Unrestricted":"20",
+			"Special":"5"
+		},
+		{
+			"Plant": "1300",
+			"StorLoc": "1302",
+			"Unrestricted":"16",
+			"Special":"5"
 		}]
 	}, {
 		"ProductId": "XKP-312548",
@@ -212,13 +263,21 @@
 		"DimUnit": "cm",
 		"ProductPicUrl": "https://openui5.hana.ondemand.com/test-resources/sap/ui/demokit/explored/img/HT-6120.jpg",
 		"Stock": [{
-			"Werk": "1000",
-			"Lgort": "0001",
-			"Menge": 1
+			"Plant": "1300",
+			"StorLoc": "All",
+			"Unrestricted":"36",
+			"Special":"10"
 		}, {
-			"Werk": "1000",
-			"Lgort": "0002",
-			"Menge": 1
+			"Plant": "1300",
+			"StorLoc": "1301",
+			"Unrestricted":"20",
+			"Special":"5"
+		},
+		{
+			"Plant": "1300",
+			"StorLoc": "1302",
+			"Unrestricted":"16",
+			"Special":"5"
 		}]
 	}, {
 		"ProductId": "KTZ-12012.V2",
@@ -239,13 +298,21 @@
 		"DimUnit": "cm",
 		"ProductPicUrl": "https://openui5.hana.ondemand.com/test-resources/sap/ui/demokit/explored/img/HT-1052.jpg",
 		"Stock": [{
-			"Werk": "1000",
-			"Lgort": "0001",
-			"Menge": 1
+			"Plant": "1300",
+			"StorLoc": "All",
+			"Unrestricted":"36",
+			"Special":"10"
 		}, {
-			"Werk": "1000",
-			"Lgort": "0002",
-			"Menge": 1
+			"Plant": "1300",
+			"StorLoc": "1301",
+			"Unrestricted":"20",
+			"Special":"5"
+		},
+		{
+			"Plant": "1300",
+			"StorLoc": "1302",
+			"Unrestricted":"16",
+			"Special":"5"
 		}]
 	}, {
 		"ProductId": "89932-922",
@@ -266,13 +333,21 @@
 		"DimUnit": "cm",
 		"ProductPicUrl": "https://openui5.hana.ondemand.com/test-resources/sap/ui/demokit/explored/img/HT-1040.jpg",
 		"Stock": [{
-			"Werk": "1000",
-			"Lgort": "0001",
-			"Menge": 1
+			"Plant": "1300",
+			"StorLoc": "All",
+			"Unrestricted":"36",
+			"Special":"10"
 		}, {
-			"Werk": "1000",
-			"Lgort": "0002",
-			"Menge": 1
+			"Plant": "1300",
+			"StorLoc": "1301",
+			"Unrestricted":"20",
+			"Special":"5"
+		},
+		{
+			"Plant": "1300",
+			"StorLoc": "1302",
+			"Unrestricted":"16",
+			"Special":"5"
 		}]
 	}, {
 		"ProductId": "38094020.1",
@@ -293,13 +368,21 @@
 		"DimUnit": "cm",
 		"ProductPicUrl": "https://openui5.hana.ondemand.com/test-resources/sap/ui/demokit/explored/img/HT-1030.jpg",
 		"Stock": [{
-			"Werk": "1000",
-			"Lgort": "0001",
-			"Menge": 1
+			"Plant": "1300",
+			"StorLoc": "All",
+			"Unrestricted":"36",
+			"Special":"10"
 		}, {
-			"Werk": "1000",
-			"Lgort": "0002",
-			"Menge": 1
+			"Plant": "1300",
+			"StorLoc": "1301",
+			"Unrestricted":"20",
+			"Special":"5"
+		},
+		{
+			"Plant": "1300",
+			"StorLoc": "1302",
+			"Unrestricted":"16",
+			"Special":"5"
 		}]
 	}, {
 		"ProductId": "870394932",
@@ -320,13 +403,21 @@
 		"DimUnit": "cm",
 		"ProductPicUrl": "https://openui5.hana.ondemand.com/test-resources/sap/ui/demokit/explored/img/HT-1032.jpg",
 		"Stock": [{
-			"Werk": "1000",
-			"Lgort": "0001",
-			"Menge": 1
+			"Plant": "1300",
+			"StorLoc": "All",
+			"Unrestricted":"36",
+			"Special":"10"
 		}, {
-			"Werk": "1000",
-			"Lgort": "0002",
-			"Menge": 1
+			"Plant": "1300",
+			"StorLoc": "1301",
+			"Unrestricted":"20",
+			"Special":"5"
+		},
+		{
+			"Plant": "1300",
+			"StorLoc": "1302",
+			"Unrestricted":"16",
+			"Special":"5"
 		}]
 	}, {
 		"ProductId": "282948303-02",
@@ -347,13 +438,21 @@
 		"DimUnit": "cm",
 		"ProductPicUrl": "https://openui5.hana.ondemand.com/test-resources/sap/ui/demokit/explored/img/HT-1138.jpg",
 		"Stock": [{
-			"Werk": "1000",
-			"Lgort": "0001",
-			"Menge": 1
+			"Plant": "1300",
+			"StorLoc": "All",
+			"Unrestricted":"36",
+			"Special":"10"
 		}, {
-			"Werk": "1000",
-			"Lgort": "0002",
-			"Menge": 1
+			"Plant": "1300",
+			"StorLoc": "1301",
+			"Unrestricted":"20",
+			"Special":"5"
+		},
+		{
+			"Plant": "1300",
+			"StorLoc": "1302",
+			"Unrestricted":"16",
+			"Special":"5"
 		}]
 	}, {
 		"ProductId": "OP-38800002",
@@ -374,13 +473,21 @@
 		"DimUnit": "cm",
 		"ProductPicUrl": "https://openui5.hana.ondemand.com/test-resources/sap/ui/demokit/explored/img/HT-1010.jpg",
 		"Stock": [{
-			"Werk": "1000",
-			"Lgort": "0001",
-			"Menge": 1
+			"Plant": "1300",
+			"StorLoc": "All",
+			"Unrestricted":"36",
+			"Special":"10"
 		}, {
-			"Werk": "1000",
-			"Lgort": "0002",
-			"Menge": 1
+			"Plant": "1300",
+			"StorLoc": "1301",
+			"Unrestricted":"20",
+			"Special":"5"
+		},
+		{
+			"Plant": "1300",
+			"StorLoc": "1302",
+			"Unrestricted":"16",
+			"Special":"5"
 		}]
 	}, {
 		"ProductId": "977700-11",
@@ -401,13 +508,21 @@
 		"DimUnit": "cm",
 		"ProductPicUrl": "https://openui5.hana.ondemand.com/test-resources/sap/ui/demokit/explored/img/HT-1063.jpg",
 		"Stock": [{
-			"Werk": "1000",
-			"Lgort": "0001",
-			"Menge": 1
+			"Plant": "1300",
+			"StorLoc": "All",
+			"Unrestricted":"36",
+			"Special":"10"
 		}, {
-			"Werk": "1000",
-			"Lgort": "0002",
-			"Menge": 1
+			"Plant": "1300",
+			"StorLoc": "1301",
+			"Unrestricted":"20",
+			"Special":"5"
+		},
+		{
+			"Plant": "1300",
+			"StorLoc": "1302",
+			"Unrestricted":"16",
+			"Special":"5"
 		}]
 	}],
 	"ProductCollectionStats": {

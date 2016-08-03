@@ -6,7 +6,8 @@
   "build": {
     "targetFolder": "dist",
     "sourceFolder": "webapp",
-    "buildRequired": true
+    "buildRequired": false,
+    "lastBuildDateTime": "Wed, 03 Aug 2016 19:32:31 GMT"
   },
   "generation": [
     {
@@ -38,5 +39,14 @@
     "notifyBeforePushLevel": "Error",
     "blockPush": false,
     "blockPushLevel": "Error"
+  },
+  "hcpdeploy": {
+    "account": "s0007545714trial",
+    "name": "materialstock",
+    "lastVersionWeTriedToDeploy": "1.0.1"
+  },
+  "deploy": {
+    "destination": "E99",
+    "name": "ZMATERIAL"
   }
 }
